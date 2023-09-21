@@ -1,15 +1,36 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - octocat
+name: Marketing data or tracking Request
+description: Question, visual or dashboard / tracking in GA4 / GTM set up
+labels: ["marketing", "data-request"]
+assignees : 
+  - mjtorresloosli
+
 body:
-  - type: markdown
+  - type: dropdown
+    id: request
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+      label: Request
+      description: What do you need
+      options:
+        - Marketing insights in the form of a visual or a dashboard
+        - Information or request regarding www tracking (GA4 / GTM)
+    validations:
+      required: true
+
+    - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: |
+        What you are trying to achieve, which hypothesis you want to test against Data.
+
+      - type: textarea
+    id: details
+    attributes:
+      label: In details
+      description: |
+        Which data you would like to get your hands on. Mention which source you think might be useful (Hubspot, Kitt, etc.) 
+        and if you already have access to a similar source (Blazer, Connected Sheet), include some URLs too to give us maximum context.
+
   - type: input
     id: contact
     attributes:
