@@ -45,9 +45,9 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: campus country
+    id: lewagon_country
     attributes:
-      label: Business Unit
+      label: Le Wagon Country
       description: The request is emitted from which Le Wagon country?
       options:
         - Argentina
