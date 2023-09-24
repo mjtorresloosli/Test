@@ -1,85 +1,75 @@
-name: Marketing data or tracking Request
-description: Question, visual or dashboard / tracking in GA4 / GTM set up
+name: Marketing data or tracking-related Request
+description: You need marketing data related to your scope or market ? Or a request related to GA4 or GTM ?
 labels: ["marketing", "data-request"]
-assignees : 
-  - mjtorresloosli
+assignees : mjtorresloosli
 
 body:
-  - type: dropdown
-    id: request
+  - type: markdown
     attributes:
-      label: Request
-      description: What do you need
-      options:
-        - Marketing insights in the form of a visual or a dashboard
-        - Information or request regarding www tracking (GA4 / GTM)
-    validations:
-      required: true
-
-    - type: textarea
+      value: |
+      - You need marketing data related to your scope or market ? 
+      - Do you have a requests related to GA4 / GTM ?
+  - type: textarea
     id: goal
     attributes:
       label: Goal
       description: |
-        What you are trying to achieve, which hypothesis you want to test against Data.
-
-      - type: textarea
-    id: details
+        - Please describe what you are trying to achieve, which hypothesis you want to test against Data. 
+        Include the source you are thinking of (Hubspot, Kitt, etc.), the expected outcome (information, visuals, dashboard) and maximun context.
+        - If related to GA4 or GTM, explain what you need to check / implement, and provide the necessary information if set up is need
+  - type: dropdown
+    id: recurrence
     attributes:
-      label: In details
-      description: |
-        Which data you would like to get your hands on. Mention which source you think might be useful (Hubspot, Kitt, etc.) 
-        and if you already have access to a similar source (Blazer, Connected Sheet), include some URLs too to give us maximum context.
-
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Recurrence
+      description: Is it a one-off or do you need this data every month for Reporting?
+      options:
+        - One-off
+        - Quarterly
+        - Monthly
+        - Daily
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: business_unit
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Business Unit
+      description: The request is emitted from which Le Wagon department?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
+        - Engineering
+        - Finance
+        - Marketing & Growth
+        - Operations
+        - Outcomes
+        - Sales & Admissions
+        - Content
+        - New Product
+        - For Business
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: campus country
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
+      label: Business Unit
+      description: The request is emitted from which Le Wagon country?
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - Argentina
+        - Australia
+        - Belgium
+        - Brazil
+        - Chile
+        - China
+        - England
+        - France
+        - Germany
+        - Global
+        - Indonesia
+        - Italy
+        - Mexico
+        - Netherlands
+        - Portugal
+        - Singapore
+        - Spain
+        - Switzerland
+        - United Kingdom
+    validations:
+      required: true 
