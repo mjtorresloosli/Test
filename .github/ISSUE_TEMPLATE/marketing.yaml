@@ -6,8 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-      - You need marketing data related to your scope or market ? 
-      - Do you have a requests related to GA4 / GTM ?
+        - You need marketing data related to your scope or market ? 
+        - Do you have a requests related to GA4 / GTM ?
   - type: textarea
     id: goal
     attributes:
