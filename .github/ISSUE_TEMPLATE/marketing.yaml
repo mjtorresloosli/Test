@@ -2,7 +2,6 @@ name: Marketing data or tracking-related Request
 description: You need marketing data related to your scope or market ? Or a request related to GA4 or GTM ?
 labels: ["marketing", "data-request"]
 assignees : mjtorresloosli
-
 body:
   - type: markdown
     attributes:
