@@ -5,8 +5,7 @@ assignees : mjtorresloosli
 body:
   - type: markdown
     attributes:
-      value: |
-        If you have a request about 
+      value: | If you have a request about 
         - Marketing tools such as: HubSpot landing pages and modules, Webflows and Mini sites (Start, Rewards, Alternance…), marketing automations or Typeform,
         - Information on our new offers or go-to-market such as: Persona, Channels, Content or Initiatives or,
         - B2B for the enrichment of contact/companies or the creation of prospect lists for outbound (call or mailing) campaigns,
