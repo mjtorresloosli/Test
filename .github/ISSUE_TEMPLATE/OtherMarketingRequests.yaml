@@ -50,3 +50,20 @@ body:
       What do you need from Marketing Team or how do you think we can support your request? 
   validations:
     required: true
+- type: dropdown
+  id: lewagon_country
+  attributes:
+    label: Le Wagon Region
+    description: The request is emitted from which Le Wagon country?
+    options:
+      - APAC
+      - Brazil
+      - France
+      - Germany
+      - LATAM SSC
+      - NECH
+      - Global
+      - Southern Europe
+      - UK
+  validations:
+   required: true 
