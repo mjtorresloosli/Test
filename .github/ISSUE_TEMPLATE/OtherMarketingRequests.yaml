@@ -13,11 +13,11 @@ body:
           - Information on our new offers or go-to-market such as: Persona, Channels, Content or Initiatives or,
           - B2B for the enrichment of contact/companies or the creation of prospect lists for outbound (call or mailing) campaigns,
         then select the correct option below:
-- type: dropdown
-  id: type_request
-  attributes:
-    label: Type of request:
-    options:
+  - type: dropdown
+    id: type_request
+    attributes:
+      label: "Type of request:"
+      options:
         - Marketing tools
         - Go To Market / New Product
         - B2B
