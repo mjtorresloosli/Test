@@ -54,7 +54,7 @@ body:
   id: lewagon_country
   attributes:
     label: Le Wagon Region
-    description: The request is emitted from which Le Wagon country?
+    description: What is your Region ?
     options:
       - APAC
       - Brazil
