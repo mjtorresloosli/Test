@@ -1,4 +1,4 @@
-name: Labels
+name: Label Issues
 
 on:
   issues:
@@ -10,14 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check issue dropdown selection
-      id: check_dropdown
+    - name: Check issue body for labels
+      id: check_labels
       run: |
-        # Extract the issue body
         issue_body=$(curl -s -H "Accept: application/vnd.github.v3+json" ${{ github.api_url }}/repos/${{ github.repository }}/issues/${{ github.event.issue.number }} | jq -r .body)
-
-        # Initialize the label variable
-        label=""
 
         # Check if the issue body contains specific keywords
         if echo "$issue_body" | grep -qi "Marketing tools"; then
@@ -27,20 +23,12 @@ jobs:
         elif echo "$issue_body" | grep -qi "B2B"; then
           echo "::set-output name=label::🤝 B2B"
         fi
-
-        echo "Label: $label"
-
-        # Store the label in an environment file
-        echo "LABEL=$label" >> $GITHUB_ENV
       shell: bash
 
     - name: Apply labels
-      if: env.LABEL
+      if: steps.check_labels.outputs.label
       run: |
-        # Get the label from the environment file
-        label="${{ env.LABEL }}"
+        label="${{ steps.check_labels.outputs.label }}"
 
-        # Add the label to the issue
         echo "Adding label: $label"
         curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" ${{ github.api_url }}/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels --data '["'$label'"]'
-       
