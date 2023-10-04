@@ -9,9 +9,9 @@ body:
     attributes:
       value: |
         If you have a request about 
-          - Marketing tools such as: HubSpot landing pages and modules, Webflows and Mini sites (Start, Rewards, Alternance…), marketing automations or Typeform,
-          - Information on our new offers or go-to-market such as: Persona, Channels, Content or Initiatives or,
-          - B2B for the enrichment of contact/companies or the creation of prospect lists for outbound (call or mailing) campaigns,
+        Marketing tools such as: HubSpot landing pages and modules, Webflows and Mini sites (Start, Rewards, Alternance…), marketing automations or Typeform,
+        Information on our new offers or go-to-market such as: Persona, Channels, Content or Initiatives or,
+        B2B for the enrichment of contact/companies or the creation of prospect lists for outbound (call or mailing) campaigns,
         then select the correct option below
 - type: dropdown
     id: type_request
