@@ -22,4 +22,10 @@ body:
       - Go To Market / New Product
       - B2B
   validations:
-    required: true   
+    required: true
+- type: textarea
+  id: context
+  attributes:
+    label: Context
+    description: |
+      Please describe as detailed as possible the context of your request: what’s the current situation? What are you doing ? How?
