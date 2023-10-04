@@ -29,3 +29,10 @@ body:
     label: Context
     description: |
       Please describe as detailed as possible the context of your request: what’s the current situation? What are you doing ? How?
+- type: textarea
+  id: goal
+  attributes:
+    label: Goal
+    description: |
+      What is your goal? Is there something not working? What’s the impact on your work and what you try to achieve? 
+      Provide exemples, screenshot and/or URLs to make sure we understand your request.
