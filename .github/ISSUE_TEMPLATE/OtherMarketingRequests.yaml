@@ -4,7 +4,7 @@ labels: ["team/growth🚀"]
 assignees : mjtorresloosli
 body:
   -type: markdown
-    attributes: 
+    attributes : 
       value: |
         If you have a request about 
         - Marketing tools such as: HubSpot landing pages and modules, Webflows and Mini sites (Start, Rewards, Alternance…), marketing automations or Typeform,
