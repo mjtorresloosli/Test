@@ -3,7 +3,7 @@ description: You need technical support on marketing tools, request related to n
 labels: ["team/growth🚀"]
 assignees : mjtorresloosli
 body:
-  - type: markdown
+- type: markdown
     attributes:
       value: |
         If you have a request about 
