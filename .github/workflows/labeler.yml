@@ -1,0 +1,13 @@
+labelMappings:
+- labels:
+    - "🤝 B2B"
+    globs:
+      - "*B2B*"
+- labels:
+    - "🛠️ marketing tools"
+    globs:
+      - "*tools*"
+- labels:
+    - "🚀 go to market / new product"
+    globs:
+      - "*Go*"
