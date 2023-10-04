@@ -16,6 +16,9 @@ jobs:
         # Extract the issue body
         issue_body=$(curl -s -H "Accept: application/vnd.github.v3+json" ${{ github.api_url }}/repos/${{ github.repository }}/issues/${{ github.event.issue.number }} | jq -r .body)
 
+        # Initialize the label variable
+        label=""
+
         # Check if the issue body contains specific keywords
         if echo "$issue_body" | grep -qi "Marketing tools"; then
           echo "::set-output name=label::🛠️ marketing tools"
@@ -24,14 +27,20 @@ jobs:
         elif echo "$issue_body" | grep -qi "B2B"; then
           echo "::set-output name=label::🤝 B2B"
         fi
+
+        echo "Label: $label"
+
+        # Store the label in an environment file
+        echo "LABEL=$label" >> $GITHUB_ENV
       shell: bash
 
     - name: Apply labels
-      if: steps.check_dropdown.outputs.label
+      if: env.LABEL
       run: |
-        # Get the label from previous step
-        label=${{ steps.check_dropdown.outputs.label }}
+        # Get the label from the environment file
+        label="${{ env.LABEL }}"
 
         # Add the label to the issue
         echo "Adding label: $label"
         curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" ${{ github.api_url }}/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels --data '["'$label'"]'
+       
