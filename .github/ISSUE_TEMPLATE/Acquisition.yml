@@ -1,14 +1,11 @@
 name: Acquisition
-description: |
-      Do you have any request related to Traffic and Leads Acquisition? We can help. 
-      If related to Paid Channels (Google, Facebook or LinkedIn ads), please use the temporary Notion workspace.
+description: Do you have any request related to Traffic and Leads Acquisition? We can help. If related to Paid Channels (Google, Facebook or LinkedIn ads), please use the temporary Notion workspace.
 labels: "acquisition"
 assignees: romanepour
 body:
-- type: markdown
-  attributes:
-    value: |
-    If related to Paid Channels (Google, Facebook or LinkedIn ads), please use the temporary [Notion workspace.](https://www.notion.so/lewagon/Paid-campaigns-board-4bc8411f2c4e40409b910ed6e66c0868)
+  - type: markdown
+    attributes:
+      value: If related to Paid Channels (Google, Facebook or LinkedIn ads), please use the temporary [Notion workspace.](https://www.notion.so/lewagon/Paid-campaigns-board-4bc8411f2c4e40409b910ed6e66c0868)
   - type: dropdown
     attributes:
       label: Region
