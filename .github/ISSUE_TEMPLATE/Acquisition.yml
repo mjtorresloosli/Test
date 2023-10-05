@@ -51,7 +51,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Request Description
+      label: "Request Description"
       description: Write your request
       placeholder: "Tell us what you want! Please share screenshots and urls :pray:"
       value:
