@@ -5,7 +5,7 @@ assignees: romanepour
 body:
   - type: markdown
     attributes:
-      value: If related to Paid Channels (Google, Facebook or LinkedIn ads), please use the temporary [Notion workspace.](https://www.notion.so/lewagon/Paid-campaigns-board-4bc8411f2c4e40409b910ed6e66c0868)
+      value: "If related to Paid Channels (Google, Facebook or LinkedIn ads), please use the temporary [Notion workspace.](https://www.notion.so/lewagon/Paid-campaigns-board-4bc8411f2c4e40409b910ed6e66c0868)"
   - type: dropdown
     attributes:
       label: Region
