@@ -53,7 +53,7 @@ body:
     attributes:
       label: Request Description
       description: Write your request
-      placeholder: Tell us what you want! Please share screenshots and urls :pray:
+      placeholder: "Tell us what you want! Please share screenshots and urls :pray:"
       value:
         ## Context
         Explain what is happening or what you want. The more details you share with us, the quicker the request will be treated.
