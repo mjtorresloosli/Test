@@ -54,17 +54,17 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Request Description
-      description: Write your request
-      placeholder: Tell us what you want! Please share screenshots and urls 🙏
-      value:
-          ## Context
-          Explain what is happening or what you want. The more details you share with us, the quicker the request will be treated.
-
-          ## Screenshots and URLs
-          Upload screenshots and share URLs here.
-      validations:
-        required: true
+          label: Request Description
+          description: Write your request
+          placeholder: Tell us what you want! Please share screenshots and urls 🙏
+          value:
+              ## Context
+              Explain what is happening or what you want. The more details you share with us, the quicker the request will be treated.
+    
+              ## Screenshots and URLs
+              Upload screenshots and share URLs here.
+          validations:
+            required: true
   - type: dropdown
     attributes:
       label: How critical is this request and when would you like it to be addressed?*
