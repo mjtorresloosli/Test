@@ -1,7 +1,7 @@
 name: Acquisition
 description: |
-    Do you have any issue/ questions related to Traffic and Leads Acquisition? We can help. 
-    If it’s related to Paid Channels (Launch or Update a campaign or Google ads, Facebook ads or LinkedIn ads), please use the temporary [Notion workspace.](https://www.notion.so/lewagon/Paid-campaigns-board-4bc8411f2c4e40409b910ed6e66c0868) 
+        Do you have any issue/ questions related to Traffic and Leads Acquisition? We can help. 
+        If it’s related to Paid Channels (Launch or Update a campaign or Google ads, Facebook ads or LinkedIn ads), please use the temporary [Notion workspace.](https://www.notion.so/lewagon/Paid-campaigns-board-4bc8411f2c4e40409b910ed6e66c0868) 
 labels:
   - "acquisition"
 assignees:
@@ -50,5 +50,27 @@ body:
         - "Google Analytics"
         - "Acquisition Dashboard/Data"
         - "Other"
+    validations:
+      required: true
+- type: textarea
+    attributes:
+      label: Request Description
+      description: Write your request
+      placeholder: Tell us what you want! Please share screenshots and urls :pray:
+      value:
+          ## Context
+          Explain what is happening or what you want. The more details you share with us, the quicker the request will be treated.
+          ## Screenshots and URLs
+          Upload screenshots and share URLs here.
+      validations:
+        required: true
+  - type: dropdown
+    attributes:
+      label: How critical is this request and when would you like it to be addressed?*
+      options:
+        - "Low: within the quarter"
+        - "Medium: within the month"
+        - "High: within the week"
+        - "Critical: By the end of the day"
     validations:
       required: true
