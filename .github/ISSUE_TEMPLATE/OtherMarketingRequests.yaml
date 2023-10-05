@@ -1,5 +1,5 @@
 name: "Marketing - Other Requests"
-description: You need technical support on marketing tools, request related to new offers or specific to B2B.
+description: You need technical support on marketing tools, request related to new offers or specific to outbound.
 labels: 
   - "team/growth🚀"
 assignees : 
@@ -11,7 +11,7 @@ body:
         Your request is about about 
         - Marketing tools such as: HubSpot landing pages and modules, Webflows and Mini sites (Start, Rewards, Alternance…), Marketing automations or Typeform,
         - Information on new offers or go-to-market such as: Persona, Channels, Content or Initiatives or, 
-        - B2B for the enrichment of contact/companies or the creation of prospect lists for outbound (call or mailing) campaigns,
+        - Outbound marketing for the enrichment of contact/companies data or the creation of prospect lists (call or mailing) campaigns,
         Then, select the correct option below.
 - type: dropdown
   id: typerequest
@@ -20,7 +20,8 @@ body:
     options:
       - Marketing tools
       - Go To Market / New Product
-      - B2B
+      - Outbound Marketing
+      - Other
   validations:
     required: true
 - type: textarea
