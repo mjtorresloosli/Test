@@ -60,7 +60,7 @@ body:
         value:
             ## Context
             Explain what is happening or what you want. The more details you share with us, the quicker the request will be treated.
-    
+            
             ## Screenshots and URLs
             Upload screenshots and share URLs here.
         validations:
