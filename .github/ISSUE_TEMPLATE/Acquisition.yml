@@ -9,7 +9,7 @@ assignees:
 body:
   - type: dropdown
     attributes:
-      label: Region*
+      label: Region
       description: For which region/team are you associated?
       options:
         - APAC
@@ -42,7 +42,7 @@ body:
       required: true
   - type: dropdown
     attributes:
-      label: Topic associated with your request*
+      label: Topic associated with your request
       options:
         - "SEO"
         - "Tracking"
@@ -54,7 +54,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Request Description*
+      label: Request Description
       description: Write your request
       placeholder: Tell us what you want! Please share screenshots and urls 🙏
       value:
