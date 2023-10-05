@@ -37,3 +37,15 @@ body:
       value:
     validations:
       required: true
+  - type: dropdown
+    attributes:
+      label: Topic associated with your request*
+      options:
+        - "SEO"
+        - "Tracking"
+        - "Referral"
+        - "Google Analytics"
+        - "Acquisition Dashboard/Data"
+        - "Other"
+    validations:
+      required: true
