@@ -28,3 +28,11 @@ body:
         - S&A Team
     validations:
       required: true
+  - type: textarea
+      attributes:
+        label: Role*
+        description: What is your role at Le Wagon?
+        placeholder: ## Marketing Manager, City Manager, Sales & Admission Manager, E&C Manager etc.
+        value:
+      validations:
+        required: true
