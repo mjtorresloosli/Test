@@ -52,14 +52,14 @@ body:
       required: true
   - type: textarea
     attributes:
-     label: Description
-     description: Write your request
-     placeholder: Tell us what you want! Please share screenshots and urls 🙏
-     value:
-        ## Context
-        Explain what is happening or what you want. The more details you share with us, the quicker the request will be treated.
-        ## Screenshots and URLs
-        Upload screenshots and share URLs here.
+          label: Description
+           description: Write your request
+           placeholder: Tell us what you want! Please share screenshots and urls 🙏
+           value:
+              ## Context
+              Explain what is happening or what you want. The more details you share with us, the quicker the request will be treated.
+              ## Screenshots and URLs
+              Upload screenshots and share URLs here.
     validations:
       required: true
   - type: dropdown
