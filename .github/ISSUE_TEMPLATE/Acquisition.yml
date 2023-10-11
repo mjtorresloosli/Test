@@ -1,6 +1,8 @@
 name: Acquisition
 description: Do you have any request related to Traffic and Leads Acquisition? We can help. If related to Paid Channels (Google, Facebook or LinkedIn ads), please use the temporary Notion workspace.
-labels: "acquisition"
+labels: 
+  - "marketing acquisition"
+  - "team/growth🚀"
 assignees: romanepour
 body:
   - type: markdown
